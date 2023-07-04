@@ -33,6 +33,7 @@ const ProfileScreen = () => {
             if(!user.name) {
                 dispatch(getUserDetails('profile'))
             } else {
+                // console.log('user: ', user);
                 setName(user.name)
                 setEmail(user.email)
             }
